@@ -17,7 +17,7 @@ function stripVitestAttributesPlugin(options: { include?: []; exclude?: [] } = {
   return {
     name: 'strip-vitest-attributes',
     transform(code, id) {
-      // skip if in production
+      // skip if not in production
       if (process.env.NODE_ENV !== 'production') {
         return null
       }
