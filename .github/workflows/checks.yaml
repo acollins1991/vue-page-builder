@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        command: ['type-check', 'test:unit']
+        command: ['type-check', 'test:unit', 'lint']
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
